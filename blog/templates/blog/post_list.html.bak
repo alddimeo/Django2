@@ -1,1 +1,31 @@
-HOW?!?!
+<html>
+
+	<head>
+		<title> Git it Tone! </title>
+	</head>
+	
+	<body>
+		
+		<div>
+			<h1>No need to worry the jury</h1>		
+		</div>
+		
+		{% for post in posts %}
+		
+			<div>
+				<p>Published: {{ post.published_date}} </p>	
+				<h1> <a href=""> {{ post.title }} </a></h1>
+				<p>{{post.text|linebreaksbr}}</p>		
+			</div>
+		
+		{%endfor%}
+		
+		
+		<p>They'll porbably take care of themselves</p>			
+		
+		<h2>Alabama Getaway</h2>
+		
+	</body>
+
+
+</html>
